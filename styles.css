@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.title{
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    margin-top: 25vh;
+    width: 30vh;
+}
+section{
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #430d4b;
+    color: white;
+    border: #7b337d solid 5px;
+   
+}
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    border: #7b337d solid 5px;
+   
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background, .foreground{
+    position: absolute;
+    
+    object-fit: cover;
+}
+.background{
+transform: translateZ(-10px) scale(2);
+height: 100%;
+width: 110%;
+}
+.foreground{
+transform: translateZ(-5px) scale(1.5);
+height: 50vh;
+}
+section img{
+    width: 50vw;
+}
+section{
+  background-image: linear-gradient(to right, #430d4b , #7b337d);
+}
+.ourlocation img{
+  overflow: hidden;
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}.googlemaps iframe{
+  overflow: hidden;
+  width: auto ;
+  max-width: 50% ;
+  height: auto ;
+  margin-right: 10px;
+}
+.googlemaps{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(to right, #430d4b , #7b337d);
+
+}
+.ourlocation {
+  background-color: #430d4b;
+  border: #7b337d 5px solid;
+}
+.googlemaps p{
+  font-size: larger;
+  color: beige;
+}
+
+
